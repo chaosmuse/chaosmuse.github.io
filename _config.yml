@@ -1,3 +1,7 @@
 name: jmagas
-markdown: rdiscount
+markdown: kramdown
 pygments: true
+baseurl: localhost:4000
+paginate: 7
+paginate_path: "blog/page:num"
+
