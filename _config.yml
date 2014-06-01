@@ -1,8 +1,20 @@
-name: jmagas
-markdown: redcarpet
-pygments: true
+name: blog.ewenicorn.net
+
+markdown: kramdown
+markdown_ext: markdown,mkdown,mkdn,mkd,md
+textile_ext: textile
+
+highlighter: pygments
+
 paginate: 1
 paginate_path: "page:num"
+relative_permalinks: true
+permalink: /:categories/:year/:month/:day/:title/
+
+source:      .
+destination: ./_site
+plugins:     ./_plugins
+layouts:     ./_layouts
 
 navigation:
  - name: Home
