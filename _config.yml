@@ -1,15 +1,17 @@
 name: jmagas
-markdown: rdiscount
+markdown: redcarpet
 pygments: true
 paginate: 1
 paginate_path: "page:num"
 
 navigation:
- - name: Posts
-   path: blog/
+ - name: Home
+   path: /
  - name: Projects
-   path: projects.html
+   path: /projects/
  - name: Resources
-   path: resources.html
+   path: /resources/
  - name: About
-   path: about.html
+   path: /about/
+ - name: License
+   path: /license/
