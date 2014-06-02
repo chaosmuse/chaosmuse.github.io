@@ -16,6 +16,8 @@ destination: ./_site
 plugins:     ./_plugins
 layouts:     ./_layouts
 
+category_dir: categories
+
 navigation:
  - name: Home
    path: /
@@ -25,5 +27,3 @@ navigation:
    path: /resources/
  - name: About
    path: /about/
- - name: License
-   path: /license/

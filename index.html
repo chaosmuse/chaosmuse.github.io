@@ -1,16 +1,11 @@
 ---
 layout: default
-title: jmagas.github.io
+title: Posts
 ---
 
 <div class="posts">
 	{% for post in paginator.posts %}
-		<div class="post">
-			<h2 class="post-title"><a href="{{ post.url }}">{{ post.title }}</a></h2>
-			<h3 class="post-date">{{ post.date | date_to_string }}</h3>
-			{{ post.content }}
-			<span>Posted under {{ post.categories }}</span>
-		</div>
+		{% include post.md %}
 	{% endfor %}
 </div>
 
