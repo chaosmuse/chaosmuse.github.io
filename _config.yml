@@ -16,8 +16,6 @@ destination: ./_site
 plugins:     ./_plugins
 layouts:     ./_layouts
 
-category_dir: categories
-
 navigation:
  - name: Home
    path: /
