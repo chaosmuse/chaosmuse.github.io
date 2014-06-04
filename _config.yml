@@ -5,6 +5,7 @@ markdown_ext: markdown,mkdown,mkdn,mkd,md
 textile_ext: textile
 
 highlighter: pygments
+excerpt_separator: ""
 
 paginate: 1
 paginate_path: "page:num"

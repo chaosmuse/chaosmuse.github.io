@@ -108,7 +108,8 @@ body {
     text-align: center;
     -moz-border-radius: 30px;
     border-radius: 30px;
-    background-color: gray;
+    border-left: 1px dashed gray;
+    border-bottom: 1px dashed gray;
     padding: 1em 0em 1em 0em;
 }
 
