@@ -18,8 +18,8 @@ plugins:     ./_plugins
 layouts:     ./_layouts
 
 navigation:
- - name: Home
-   path: /
+ - name: Posts
+   path: /categories
  - name: Projects
    path: /projects/
  - name: Resources

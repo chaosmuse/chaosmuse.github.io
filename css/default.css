@@ -106,16 +106,17 @@ body {
     display: block;
     width:90%!important;
     text-align: center;
-    -moz-border-radius: 30px;
-    border-radius: 30px;
-    border-left: 1px dashed gray;
-    border-bottom: 1px dashed gray;
     padding: 1em 0em 1em 0em;
 }
 
 .Layout16_4 ul, .Layout16_4 li {
     font-size: 1em;
     display: inline;
+    -moz-border-radius: 2em;
+    border-radius: 2em;
+    border-left: 1px dashed gray;
+    border-bottom: 1px dashed gray;
+    padding: 1em;
 }
 
 .Layout16_4 a {
