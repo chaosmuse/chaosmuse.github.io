@@ -1,0 +1,8 @@
+---
+layout: default
+---
+
+<h2 class="post-title">{{ post.title }}</h2>
+<h3 class="post-date">{{ page.date | date_to_string }}</h3>
+<span>{{ content }}</span>
+<span>Posted under {{ page.categories  join: ',' }}</span>
