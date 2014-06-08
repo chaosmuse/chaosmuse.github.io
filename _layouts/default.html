@@ -1,31 +1,3 @@
-<!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
-	<head>
-		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
-		<title>{{ site.name }} &#187 {{ page.title }} </title>
-		<link href="/css/default.css" rel="stylesheet" type="text/css" />
-		<link href="/css/pygments.css" rel="stylesheet" type="text/css" />
-	</head>
-	<body>
-		<div class="templateholder">
-			<div class="Layout16_header">
-				<a href="{{site.baseurl}}">{{ site.name }}</a>
-			</div>
-			<div class="Layout16_1">
-				<ul>
-				{% for entry in site.navigation %}
-				<li>
-				<a href="{{entry.path}}">{{ entry.name }}</a>
-				</li>
-				{% endfor %}
-				</ul>
-			</div>
-			<div class="Layout16_2"></div>
-			<div class="Layout16_3">{{ content }}</div>
-			<div class="Layout16_4">{% include cloud.md %}</div>
-		</div>
-		<div class="Layout16_5">
-			Copyright &copy; {{ site.time | date: '%Y' }} Jen Magas under the <a href="{{| prepend: site.baseurl | replace: '//', '/' }}license/">GPLv3 License</a>
-		</div>
-	</body>
-</html>
+{% include layout_start.md %}
+{{ content }}
+{% include layout_end.md %}

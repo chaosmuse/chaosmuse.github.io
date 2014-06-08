@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: Way Too Much
 categories: [updates]
 ---
