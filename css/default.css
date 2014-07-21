@@ -99,7 +99,6 @@ body {
 
 .Layout16_4 h3 {
     text-align:center;
-    text-decoration:underline;
 }
 
 .Layout16_4 span {
@@ -117,14 +116,6 @@ body {
     border-left: 1px dashed gray;
     border-bottom: 1px dashed gray;
     padding: 1em;
-}
-
-.Layout16_4 a {
-    text-decoration: none;
-    border-bottom: none;
-    font-weight:initial;
-    font-style:normal;
-    color: white;
 }
 
 .Layout16_4 a:hover {
