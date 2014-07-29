@@ -1,4 +1,6 @@
 name: blog.ewenicorn.net
+description: Ramblings of an eclectic woman
+url: http://blog.ewenicorn.net
 
 markdown: kramdown
 markdown_ext: markdown,mkdown,mkdn,mkd,md
