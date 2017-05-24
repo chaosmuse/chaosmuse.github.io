@@ -1,6 +1,6 @@
-name: blog.ewenicorn.net
+name: chaosmuse.github.io
 description: Ramblings of an eclectic woman
-url: http://blog.ewenicorn.net
+url: https://chaosmuse.github.io
 
 markdown: kramdown
 markdown_ext: markdown,mkdown,mkdn,mkd,md
