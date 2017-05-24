@@ -27,3 +27,5 @@ navigation:
    path: /resources/
  - name: About
    path: /about/
+
+theme: jekyll-theme-minimal
