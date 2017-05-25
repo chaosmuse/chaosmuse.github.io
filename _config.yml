@@ -1,6 +1,7 @@
 name: chaosmuse.github.io
 description: Ramblings of an eclectic woman
 url: https://chaosmuse.github.io
+baseurl: /
 
 markdown: kramdown
 markdown_ext: markdown,mkdown,mkdn,mkd,md
