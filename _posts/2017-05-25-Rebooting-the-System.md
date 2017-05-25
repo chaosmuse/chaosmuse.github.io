@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: Rebooting the System
 categories: [updates]
 ---

@@ -12,7 +12,7 @@ excerpt_separator: ""
 
 paginate: 1
 paginate_path: "page:num"
-permalink: /:categories/:year/:month/:day/:title/
+permalink: /:year/:month/:day/:title/
 
 source:      .
 destination: ./_site
