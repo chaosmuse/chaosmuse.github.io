@@ -6,7 +6,7 @@ markdown: kramdown
 markdown_ext: markdown,mkdown,mkdn,mkd,md
 textile_ext: textile
 
-highlighter: pygments
+highlighter: rouge
 excerpt_separator: ""
 
 paginate: 1
@@ -15,8 +15,8 @@ permalink: /:categories/:year/:month/:day/:title/
 
 source:      .
 destination: ./_site
-plugins:     ./_plugins
-layouts:     ./_layouts
+plugins_dir: ./_plugins
+layouts_dir: ./_layouts
 
 navigation:
  - name: Posts
