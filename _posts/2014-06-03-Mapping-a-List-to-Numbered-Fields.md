@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Mapping a List to Numbered Fields
-categories: Java
+categories: [java]
 ---
 
 One of my oh-so-favorite (*cough*) things to do lately in Java has been mapping one type of object to another with no particular transformation. Among these has been the act of taking a list and shifting its contents into a series of fields, depending on how many items are availble in the list. It's been driving me nuts to consider using nested if statements, as such:
@@ -19,7 +19,7 @@ One of my oh-so-favorite (*cough*) things to do lately in Java has been mapping 
     }
 {% endhighlight %}
 
-I'm sorry, but this is ugly, dense, and generally gross. I needed another solution. It finally occurred to me while staring at the conditions that I could easily just leverage a switch statement; after all, all I was doing was considering an int value repeatedly. Let's see how we can do this a little more elegantly. 
+I'm sorry, but this is ugly, dense, and generally gross. I needed another solution. It finally occurred to me while staring at the conditions that I could easily just leverage a switch statement; after all, all I was doing was considering an int value repeatedly. Let's see how we can do this a little more elegantly.
 
 {% highlight java %}
     ArbitraryTarget target = new ArbitraryObject();

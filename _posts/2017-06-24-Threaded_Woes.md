@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Threaded Woes
-categories: [programming]
+categories: [java]
 ---
 
 ## The Problem
@@ -10,7 +10,8 @@ I'd been banging my head on these logging entries for days. Our recently added a
 
 Working with Spring, mind you, the class looked something like this:
 
-{% highlight java linenos %}
+{% highlight java %}
+{% raw %}
 @Component
 public class AuditLogger {
     @Autowired
@@ -62,16 +63,18 @@ public class AuditLogger {
       logger.info("");
     }
 }
-
+{% endraw %}
 {% endhighlight %}
 
 Unfortunately, the log entries were coming out with values from prior log entries, as such:
 
-{% highlight %}
+{% highlight log %}
+{% raw %}
 2017/06/25 09:02:12 | INFO | command = login, result = success, user = jenny98
 2017/06/25 09:02:19 | INFO | command = login, result = failure, user = hacker5
 2017/06/25 09:02:25 | INFO | command = non_existant_access, result = failed, user = robert.d.johnson, object = /api/lookup?id=1103725
 2017/06/25 09:02:27 | INFO | command = login, result = success, user = orangeuser12, object = /api/lookup?id=1103725
+{% endraw %}
 {% endhighlight %}
 
 Notice the last line, which has the same 'object' shown as the prior log line, even though the 'login' type log entry (populated by 'logSuccessfulLogin' method) doesn't add an 'object' attribute at all.
@@ -82,7 +85,8 @@ Notice the last line, which has the same 'object' shown as the prior log line, e
 
 The fix here for me was easier than perhaps I expected; all I had to do was clear out the contents of the MDC after the logging was complete.
 
-{% highlight java linenos %}
+{% highlight java %}
+{% raw %}
 private void log() {
   // Everything in the log line itself is populated from the MDC based on
   // the log4j configuration; nothing actually needs to be explicitly logged here
@@ -93,4 +97,5 @@ private void log() {
   // the MDC is in a clean state.
   MDC.clear();
 }
+{% endraw %}
 {% endhighlight %}
